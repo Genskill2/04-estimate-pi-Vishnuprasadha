@@ -4,11 +4,11 @@
 #include <math.h>
 
 float wallis_pi(int n){
-  float p=1.0;
+  float pi_by_two=1.0;
   for(int i=1;i<=n;i++){
-    p=p*((float)4*i*i/(4*i*i-1));
+     pi_by_two= pi_by_two*((float)4*i*i/(4*i*i-1));
   }
-  return p*2.0;
+  return  pi_by_two*2.0;
 };
 
 int main(void) {
