@@ -10,13 +10,13 @@ float frandom() {
 float mc_pi(int n){
    int c1=0,c2=0;
     while(n--){
-        float a=frandom();
-        float b=frandom();
-       float  d=sqrt(a*a+b*b);
-        if(d<=1){
-            c1++;
+        float coordinate_a=frandom();
+        float coordinate_b=frandom();
+       float  distance=sqrt(coordinate_a*coordinate_a+coordinate_b*coordinate_b); //applying cartesian formula to find distance
+        if(distance<=1){
+            c1++; //Points inside the circle
         }
-        c2++;
+        c2++; // Total number of points
 
 
     }
